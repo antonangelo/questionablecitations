@@ -14,8 +14,8 @@ def search(query,start):
 '''
 A function that opens a file, writes results to it, and then closes it
 '''
-def results(string):
-    f = open("results.json", "a", encoding="utf8")
+def results(filename, string):
+    f = open("results/"+filename+".json", "a", encoding="utf8")
     f.write(json.dumps(string))
     f.close
 
@@ -23,11 +23,11 @@ j = open("testjournals.txt", "r", encoding="utf8")
 
 
 for line in j:
-    print(line)
-    journal =urllib.parse.quote(line)
+    journalname = line.rstrip()
+    journal = urllib.parse.quote(journalname)
     print(journal)
     searchtext ="refsrctitle("+journal+")"
     print(searchtext)
     resultJson = search(searchtext,"1")
-    results(resultJson)
+    results(journalname, resultJson)
 j.close

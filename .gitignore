@@ -1,3 +1,5 @@
 apikey.py
-results.json
 Pip*
+results/
+__*
+.vscode
