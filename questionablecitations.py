@@ -19,7 +19,7 @@ def results(filename, string):
     f.write(json.dumps(string))
     f.close
 
-j = open("testjournals.txt", "r", encoding="utf8")
+j = open("journals.txt", "r", encoding="utf8")
 
 
 for line in j:
