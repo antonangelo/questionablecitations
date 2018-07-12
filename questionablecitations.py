@@ -24,7 +24,7 @@ j = open("testjournals.txt", "r", encoding="utf8")
 
 for line in j:
     journalname = line.rstrip()
-    journal = urllib.parse.quote(journalname)
+    journal = urllib.parse.quote('"'+journalname+'"')
     print(journal)
     searchtext ="refsrctitle("+journal+")"
     print(searchtext)
