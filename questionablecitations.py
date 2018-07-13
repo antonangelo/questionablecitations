@@ -1,12 +1,12 @@
 from apikey import apikey
-import json, requests, urllib
+import json, requests, urllib, time
 
 '''
 A function which runs a search query in SCOPUS. Request number is
-set to 100. Start can be adjusted if there are more records
+set to 200. Start can be adjusted if there are more records
 '''
 def search(query,start):    
-    articles = requests.get("http://api.elsevier.com/content/search/index:SCOPUS?query=" + query + '&count=100' + '&start=' + str(start),headers={'Accept':'application/json','X-ELS-APIKey':apikey})
+    articles = requests.get("http://api.elsevier.com/content/search/index:SCOPUS?query=" + query + '&count=200' + '&start=' + str(start),headers={'Accept':'application/json','X-ELS-APIKey':apikey})
     json = articles.json()
     return json
 
@@ -30,4 +30,5 @@ for line in j:
     print(searchtext)
     resultJson = search(searchtext,"1")
     results(journalname, resultJson)
+    time.sleep(10)
 j.close
