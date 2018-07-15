@@ -1,9 +1,9 @@
-#from apikey import apikey
+from apikey import apikey
 import json, requests, urllib, os
 
 resultsdir = 'results/'
 journallist = 'journals.txt' #full list, or test list.
-apikey='1057dc2c133aea3f1a32a48359b412a8'
+
 '''
 A function which runs a search query in SCOPUS. Request number is
 set to 200. Start can be adjusted if there are more records
