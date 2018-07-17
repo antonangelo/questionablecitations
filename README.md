@@ -10,3 +10,8 @@ apikey=YOURAPIKEY
 
 The list of Beall's predatory journals was taken from [https://beallslist.weebly.com/standalone-journals.html]
 
+Two programs, 
+
+- questionablecitations.py gathers citations and writes them into json files
+- resultsprocessor.py reads the above json files and puts them into a csv ready to import into ... R?  Open Refine?  This is less developed.
+
