@@ -13,5 +13,5 @@ The list of Beall's predatory journals was taken from [https://beallslist.weebly
 Two programs, 
 
 - questionablecitations.py gathers citations and writes them into json files
-- resultsprocessor.py reads the above json files and puts them into a csv ready to import into ... R?  Open Refine?  This is less developed.
+- resultsprocessor.py reads the above json files and puts them into a csv ready to import into ... R?  Open Refine?  This is less developed.  By less developed, I mean broken (so far)
 
