@@ -124,7 +124,7 @@ Cardiology and Cardiovascular Medicine
 Caribbean Journal of Science and Technology
 Case Study and Case Report
 The Caspian Sea Journal 
-Cellular and Molecular Biology also here
+Cellular and Molecular Biology 
 Centrum
 Chemical Science Transactions
 Chemistry Research Journal
@@ -269,7 +269,7 @@ International Ayurvedic Medical Journal
 The International Asian Research Journal 
 International Biology Review
 International Bulletin of Business Administration 
-International Cardiovascular Forum  also here
+International Cardiovascular Forum 
 International Chemistry Review
 International Design Journal
 International Economic Letters
@@ -540,7 +540,7 @@ International Journal of Engineering & Technology
 International Journal of Engineering and Technology 
 International Journal of Engineering Applied Science and Technology 
 International Journal of Engineering Associates 
-International Journal of Engineering Development and Research (IJEDR
+International Journal of Engineering Development and Research 
 International Journal of Engineering Innovations and Research 
 International Journal of Engineering Inventions 
 International Journal of Engineering Maths and Computer Science
@@ -671,7 +671,7 @@ International Journal of Law and Legal Jurisprudence Studies
 International Journal of Law and Management Studies 
 International Journal of Law Research
 International Journal of Learning, Teaching and Educational Research
-International Journal of Liberal Arts & Social Science [last word also appears as “Sciences”]
+International Journal of Liberal Arts & Social Science
 International Journal of Life science and Pharma Research
 International Journal of Life Sciences Biotechnology and Pharma Research 
 International Journal of Life-Sciences Scientific Research 
@@ -713,7 +713,7 @@ International Journal of Modern Engineering Research
 International Journal of Modern Sciences and Engineering Technology 
 International Journal of Mosquito Research
 International Journal of Multidisciplinary and Current Research 
-International Journal of Multidisciplinary and Scientific Emerging Research  also here
+International Journal of Multidisciplinary and Scientific Emerging Research
 International Journal of Multidisciplinary Education and Research 
 International Journal of Multidisciplinary Educational Research 
 International Journal of Multidisciplinary Health Sciences
@@ -828,7 +828,7 @@ International Journal of Research Methodology
 International Journal of Research Publications in Engineering and Technology 
 International Journal of Research Science and Management 
 International Journal of Review in Applied and Social Sciences 
-International Journal of Review in Life Sciences  Also: Hijacked version
+International Journal of Review in Life Sciences
 International Journal of Reviews in Computing
 International Journal of Reviews, Surveys and Research 
 International Journal of Sanskrit Research
@@ -1131,7 +1131,7 @@ Journal of Science and Technology Advances
 Journal of Science Editing
 Journal of Scientific and Engineering Research
 Journal of Scientific Letters
-Journal of Scientific Research and Development also here
+Journal of Scientific Research and Development
 Journal of Scientific Research in Pharmacy 
 Journal of Scientific Research in Physical & Mathematical Sciences
 Journal of Scientific Theory and Methods
@@ -1211,7 +1211,6 @@ PunarnaV
 Quarterly Physics Review
 Reef Resources Assessment and Management Technical Paper
 Remedy Open Access
-Research | Research 
 Research Ambition
 Research Chronicler
 Research Chronicles 
@@ -1275,7 +1274,7 @@ Swiss Journal of Research in Business and Social Science
 Tactful Management Research Journal 
 Technical Journal of Engineering and Applied Sciences 
 Technics Technologies Education Management
-Tehnički vjesnik = Technical Gazette 
+Tehnički vjesnik
 Translational Medicine and Biotechnology 
 Transnational Journal of Science and Technology 
 Transworld Medical Journal 
@@ -1309,9 +1308,6 @@ World Journal of Science and Technology
 World Medical Student Journal 
 World Scientific News
 World Wide Journal of Multidisciplinary Research and Development
-Last updated January 9, 2017
-Update
-Here we include journals that were not originally on the Beall's list, but may be predatory.
 Advances in Fixed Point Theory 
 AGU International Journal of Engineering & Technology 
 AGU International Journal of Professional Studies & Research 

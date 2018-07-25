@@ -4,61 +4,98 @@ import json, os, csv
 from pprint import pprint
 
 resultsdir ='results/'
-'''
-with open(resultsdir+'Academic Research Reviews.json') as f:
-    data = json.load(f)
 
-#pprint(data)
-
-print(data["search-results"]["opensearch:totalResults"])
-
-entry = data["search-results"]["entry"]
-'''
 #pprint(entry)
-with open('results.csv', 'w', newline='') as csvfile:
-    for filename in os.listdir(path="results/"):
-        with open(resultsdir+filename) as f:
-            data = json.load(f)
-            entry = data["search-results"]["entry"]
-            citations = int(data["search-results"]["opensearch:totalResults"])
-            if citations > 0:
-                i = 0
-                for value in entry:
-                    entryList = []
-                    entryList.append(filename)
-                    if "prism:doi" in  entry[i].keys():
-                        entryList.append(entry[i]["prism:doi"])
-                    if "dc:identifier" in  entry[i].keys():
-                        entryList.append(entry[i]["dc:identifier"])
-                    if "dc:title" in  entry[i].keys():
-                        entryList.append(entry[i]["dc:title"])
-                    if "dc:creator" in  entry[i].keys():
-                        entryList.append(entry[i]["dc:creator"])
-                    if "prism:publicationName" in  entry[i].keys():
-                        entryList.append(entry[i]["prism:publicationName"])
-                    if "prism:issn" in  entry[i].keys():
-                        entryList.append(entry[i]["prism:issn"])
-                    if "prism:volume" in  entry[i].keys():
-                        entryList.append(entry[i]["prism:volume"])
-                    if "prism:issueIdentifier" in  entry[i].keys():
-                        entryList.append(entry[i]["prism:issueIdentifier"])
-                    if "prism:pageRange" in  entry[i].keys():
-                        entryList.append(entry[i]["prism:pageRange"])
-                    if "prism:coverDate" in  entry[i].keys():
-                        entryList.append(entry[i]["prism:coverDate"])
-                    if "pubmed-id" in  entry[i].keys():
-                        entryList.append(entry[i]["pubmed-id"])
-                    if "prism:aggregationType" in  entry[i].keys():
-                        entryList.append(entry[i]["prism:aggregationType"])
-                    if "subtypeDescription" in  entry[i].keys():
-                        entryList.append(entry[i]["subtypeDescription"])
-                    if "openaccess" in  entry[i].keys():
-                        entryList.append(entry[i]["openaccess"])
-                    i = i + 1
-                    pprint(entryList)
+with open('results.csv', 'w', newline='', encoding="utf8") as csvfile:
+    for filename in os.listdir(path=resultsdir):
+        if "json" in filename:
+            with open(resultsdir+filename) as f:
+                try:
+                    data = json.load(f)
+                except Exception as e:
+                    print("type error: "+ str(e)+ " in file: "+ filename)
+                entry = data["search-results"]["entry"]
+                citations = int(data["search-results"]["opensearch:totalResults"])
+                if citations > 0:
+                    i = 0
+                    for value in entry:
+                        entryList = []
+                        entryList.append(filename)
+                        if "prism:doi" in  entry[i].keys():
+                            entryList.append(entry[i]["prism:doi"])
+                        else:
+                            entryList.append("")
 
-                    resultswriter = csv.writer(csvfile, delimiter='|')
-                    resultswriter.writerow(entryList)
+                        if "dc:identifier" in  entry[i].keys():
+                            entryList.append(entry[i]["dc:identifier"])
+                        else:
+                            entryList.append("")
+                        
+                        if "dc:title" in  entry[i].keys():
+                            entryList.append(entry[i]["dc:title"])
+                        else:
+                            entryList.append("")
+                        
+                        if "dc:creator" in  entry[i].keys():
+                            entryList.append(entry[i]["dc:creator"])
+                        else:
+                            entryList.append("")
+                        
+                        if "prism:publicationName" in  entry[i].keys():
+                            entryList.append(entry[i]["prism:publicationName"])
+                        else:
+                            entryList.append("")
+                        
+                        if "prism:issn" in  entry[i].keys():
+                            entryList.append(entry[i]["prism:issn"])
+                        else:
+                            entryList.append("")
+                        
+                        if "prism:volume" in  entry[i].keys():
+                            entryList.append(entry[i]["prism:volume"])
+                        else:
+                            entryList.append("")
+                        
+                        if "prism:issueIdentifier" in  entry[i].keys():
+                            entryList.append(entry[i]["prism:issueIdentifier"])
+                        else:
+                            entryList.append("")
+                        
+                        if "prism:pageRange" in  entry[i].keys():
+                            entryList.append(entry[i]["prism:pageRange"])
+                        else:
+                            entryList.append("")
+                        
+                        if "prism:coverDate" in  entry[i].keys():
+                            entryList.append(entry[i]["prism:coverDate"])
+                        else:
+                            entryList.append("")
+                        
+                        if "pubmed-id" in  entry[i].keys():
+                            entryList.append(entry[i]["pubmed-id"])
+                        else:
+                            entryList.append("")
+                        
+                        if "prism:aggregationType" in  entry[i].keys():
+                            entryList.append(entry[i]["prism:aggregationType"])
+                        else:
+                            entryList.append("")
+                        
+                        if "subtypeDescription" in  entry[i].keys():
+                            entryList.append(entry[i]["subtypeDescription"])
+                        else:
+                            entryList.append("")
+                        
+                        if "openaccess" in  entry[i].keys():
+                            entryList.append(entry[i]["openaccess"])
+                        else:
+                            entryList.append("")
+                        
+                        i = i + 1
+                        # pprint(entryList)
+
+                        resultswriter = csv.writer(csvfile, delimiter='|')
+                        resultswriter.writerow(entryList)
 csvfile.close()
 
 
