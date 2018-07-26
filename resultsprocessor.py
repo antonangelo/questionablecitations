@@ -91,12 +91,13 @@ with open('results.csv', 'w', newline='', encoding="utf8") as csvfile:
                                 entryList.append(entry[i]["openaccess"])
                             else:
                                 entryList.append("")
-                            resultswriter = csv.writer(csvfile, delimiter='|')
+                            resultswriter = csv.writer(csvfile, delimiter='\t')
                             resultswriter.writerow(entryList)
+                            i = i + 1
                             
                 except Exception as e:
                     print("type error: "+ str(e)+ " in file: "+ filename)
-                i = i + 1
+                
                         # pprint(entryList)
 
 
