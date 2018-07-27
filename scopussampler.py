@@ -9,8 +9,8 @@ def search(query):
         entry = json["search-results"]["entry"]
         citations = int(json["search-results"]["opensearch:totalResults"])
     except Exception as e:
-        print("type error: "+ str(e)+ " in journal: "+ query)
-        citations = "error"
+        errortext = "type error: "+ str(e)+ " in journal: "+ query
+        citations = errortext
     return citations
 
 
